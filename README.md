@@ -3,7 +3,7 @@
 Paper: https://doi.org/10.1109/JIOT.2025.3621243
 
 <p align="center">
-  <img src="figs/framework.png" alt="HyDRA framework" width="720">
+  <img src="figs/framework.png" alt="HyDRA framework" width="600">
 </p>
 
 HyDRA combines lossless VMD preprocessing with a dual-mode neural network for
