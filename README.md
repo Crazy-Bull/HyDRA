@@ -1,4 +1,4 @@
-# HyDRA: A Hybrid Dual-Mode Network for Closed- and Open-Set RFFI with Optimized VMD
+# HyDRA: A Hybrid Dual-Mode Network for Closed- and Open-Set RFFI With Optimized VMD
 
 Paper: https://doi.org/10.1109/JIOT.2025.3621243
 
@@ -30,6 +30,7 @@ HyDRA/
 |-- examples/
 |   `-- smoke_forward.py  # synthetic TDSE/MLFE forward-pass check
 |-- requirements.txt
+|-- LICENSE
 `-- README.md
 ```
 
@@ -91,15 +92,18 @@ deployment-side substitution described in the paper when the official
 
 ## Citation
 
-Liu H, Huang Y, Gong Y, Zhai Y and Lu J. HyDRA: A Hybrid Dual-Mode Network for
-Closed- and Open-Set RFFI with Optimized VMD. IEEE Internet of Things Journal.
-doi: 10.1109/JIOT.2025.3621243
+Liu H, Huang Y, Gong Y, Zhai Y and Lu J (2025) HyDRA: A Hybrid Dual-Mode
+Network for Closed- and Open-Set RFFI With Optimized VMD. IEEE Internet of
+Things Journal, 12(24):53828-53841. doi: 10.1109/JIOT.2025.3621243
 
 ```bibtex
 @article{liu2025hydra,
-  title = {HyDRA: A Hybrid Dual-Mode Network for Closed- and Open-Set RFFI with Optimized VMD},
+  title = {HyDRA: A Hybrid Dual-Mode Network for Closed- and Open-Set RFFI With Optimized VMD},
   author = {Liu, Hanwen and Huang, Yuhe and Gong, Yifeng and Zhai, Yanjie and Lu, Jiaxuan},
   journal = {IEEE Internet of Things Journal},
+  volume = {12},
+  number = {24},
+  pages = {53828--53841},
   year = {2025},
   doi = {10.1109/JIOT.2025.3621243}
 }

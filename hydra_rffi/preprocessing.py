@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from typing import Iterable, Literal
+from typing import Iterable, Literal, Optional
 
 import numpy as np
 
@@ -56,7 +56,7 @@ def _inverse_square_weights(
 def lossless_vmd_1d(
     signal: np.ndarray,
     num_modes: int = 3,
-    center_indices: Iterable[float] | None = None,
+    center_indices: Optional[Iterable[float]] = None,
     fundamental_index: float = 12.5,
     eps: float = 1e-8,
 ) -> np.ndarray:
@@ -94,7 +94,7 @@ def lossless_vmd_1d(
 def decompose_iq(
     samples: np.ndarray,
     num_modes: int = 3,
-    center_indices: Iterable[float] | None = None,
+    center_indices: Optional[Iterable[float]] = None,
     fundamental_index: float = 12.5,
     representation: Literal["iq", "sum", "magnitude_phase"] = "iq",
 ) -> np.ndarray:
