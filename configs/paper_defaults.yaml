@@ -1,0 +1,38 @@
+signal:
+  input_length: 256
+  sample_rate_hz: 25000000
+  symbol_rate_hz: 2000000
+  fundamental_dft_index: 12.5
+
+lossless_vmd:
+  num_modes: 3
+  central_dft_indices: [12.5, 37.5, 62.5]
+  representation: iq
+
+model:
+  input_channels: 6
+  feature_dim: 64
+  temporal_kernel_size: 3
+  fixed_kernel_size: 15
+  tdse_layers: 2
+  attention_heads: 4
+  feedforward_dim: 128
+  dropout: 0.1
+  mlfe_layers: 1
+  state_dim: 16
+  mamba_conv_kernel_size: 4
+  expansion_factor: 2
+
+training_reference:
+  optimizer: Adam
+  learning_rate: 0.001
+  scheduler: ReduceLROnPlateau
+  lr_reduction_factor: 0.1
+  patience: 10
+  min_learning_rate: 0.00001
+  batch_size: 32
+  max_epochs: 1000
+
+open_set:
+  temperature: 1.6
+  threshold: 0.999
